@@ -93,7 +93,7 @@ func modify(f string) error {
 
 func addLogs(path string, f *ast.File) (changed bool) {
 
-	var curFunc *ast.FuncDecl
+	// var curFunc *ast.FuncDecl
 
 	ast.Inspect(f, func(f ast.Node) bool {
 
@@ -101,7 +101,7 @@ func addLogs(path string, f *ast.File) (changed bool) {
 
 		if fn, ok := f.(*ast.FuncDecl); ok {
 
-			curFunc = fn
+			// curFunc = fn
 
 			changed = true
 
